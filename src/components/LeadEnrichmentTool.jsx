@@ -78,7 +78,7 @@ const LeadEnrichmentTool = () => {
     setError(null);
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}api/enrich`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/enrich`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
